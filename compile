@@ -1,0 +1,5 @@
+GTEST_DIR="/home/phil.wright/Downloads/gtest-1.7.0"
+
+GTEST_LIBS="-lgtest -lpthread" # -lgtest_main"
+
+g++ -std=c++11 -oroman_numeral_kata -I$GTEST_DIR/include -L$GTEST_DIR/build test_roman_numeral.cpp roman_numeral.cpp $GTEST_LIBS
